@@ -1,4 +1,25 @@
 html {
+    --scrollbarBG: white;
+    --thumbBG: #7c0303;
+  }
+  body::-webkit-scrollbar {
+    width: 18px;
+    border-radius: 5px;
+  }
+  body {
+    scrollbar-width: dark;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+
+html {
     font-family: 'Crimson Text', serif;
     font-size: large;
 }
@@ -6,6 +27,8 @@ html {
 body {
     margin: 0; 
     background-color: white; 
+    margin-left: 10px; 
+    margin-right: 10px;
 }
 
 #mobile-menu {
@@ -22,7 +45,7 @@ body {
 } 
 
 nav {
-    background: #000033;  /* #0000ff / red */
+    background: #000033;  
     top: 0; 
     position: fixed;
     width: 100%;
@@ -33,7 +56,7 @@ nav {
 nav a {
     text-decoration: none;
     font-size: 1rem; 
-    margin-left: 8vh; 
+    margin-left: 13vh; 
     color: white;
     font-family: 'Crimson Text', serif;
     /*font-weight: bold;*/
@@ -134,15 +157,27 @@ h2:hover {
 
 h3 {
     text-align: center;
-    margin-top: 1.1em;
+    margin-top: 1.2em;
     font-family: 'Playfair Display', serif;
     font-size: 2em;
     font-weight: bold; 
     color: black;
 }
 
+h4 {
+    font-family: 'Montaga', serif;
+    font-size: 1.3em;
+    text-align: left; 
+    text-decoration: underline; 
+    margin-top: 2vw;
+}
+
+h4:hover {
+    color: #cc0000;
+}
+
 #history {
-    background-image: url("../images/US_flag.jpg");
+    background-image: url("../images/flag.jpg");
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center top;
@@ -162,6 +197,91 @@ h3 {
     font-family: 'Crimson Text', serif;
     font-size: 1.2em;
 }
+
+#Interviews { 
+    background-image:url("../images/liberty.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+ul li {
+    margin-left: 35px;
+    clear: both; 
+}
+
+.clear {
+    clear: both; 
+}
+
+.textmargin {
+    margin-left: 5px; 
+}
+
+h5 {
+    text-align: center;
+    margin-top: 1.6em;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em; 
+    color: #00004d;
+}
+
+figcaption {
+    text-align: left;
+    margin-top: 2em;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95em; 
+    font-weight: bold;
+    color: #b30000;
+}
+
+figcaption1 {
+    text-align: left;
+    margin-top: 2em;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95em; 
+    font-weight: bold;
+    color: #00004d ;
+    clear: both;
+}
+
+.column2 {
+    vertical-align: middle;
+    float: left; 
+    margin-left: 10px; 
+}
+
+#Video{  
+    background-image: url("../images/peaceful protest1.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+} 
+ 
+/*.video1 {
+    margin-left: 600px;
+}*/
+
+h5 {
+    font-size: 18px;
+}
+
+#Video > p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1em;
+}
+
+h6 { 
+    font-size: 22px;
+}
+
+.links {
+    font-size: 23px;
+    margin-left: 100px;
+}
+
 
 @media only screen and (max-width: 600px) {
     #mobile-menu {
@@ -222,130 +342,22 @@ h3 {
     }
 
     #history {
-        background-image: url("../images/US_flag.jpg");
+        background-image: url("../images/flag.jpg");
         background-repeat: no-repeat; 
         background-size: cover; 
         background-position: center top;
         width: 100%; 
-        height: 280vh;
+        height: 375vh;
         text-align: center;
     }
+
+    .column {
+        width: 100%;
+    }
+
+    /*.video1 {
+        margin-left: 150px;
+    }*/
+
   
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
