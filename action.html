@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title> This-is-America</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+        <meta name = "viewport" content= "width=device-width, initial scale=1">
+        <link rel="stylesheet" href="css/fontawesome-all.css">
+        <link href="css/standard.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header> 
+
+            <a href="#mobile-menu" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <nav>
+                <a href="index.html"> <i class="fas fa-home"></i> Home</a>
+                <a href="history.html"> <i class="fas fa-history"></i> History</a>
+                <a href="interviews.html"> <i class="fas fa-book"></i> Interviews</a>  
+                <a href="action.html"> <i class="fas fa-play-circle"></i> Take Action</a>
+            </nav>
+
+        </header>
+
+        <body> 
+            <article id="Video"> 
+                <h3> Take Action!</h3> 
+
+                <figcaption1> 
+                    &#8287 Alike Elenilson, Claudette, Brianna, and Maria; there are millions of people who are 
+                    discriminated solely based on how they look. It is unfortunate that we say This is , 
+                    America, but we can change America. Below, is a video submission by one of our interviewees, 
+                    Elenilson Martinez, who passionately replied to our final question, what would you like the future to be like? 
+                </figcaption1>
+
+            <div style="text-align:center"> 
+                <button onclick="playPause()" style="color: rgb(179, 12, 12)"> Play/Pause</button> 
+                <button onclick="makeBig()" style="color: rgb(179, 12, 12)"> Big</button>
+                <button onclick="makeSmall()" style="color: rgb(179, 12, 12)"> Small</button>
+                <button onclick="makeNormal()" style="color: rgb(179, 12, 12)"> Normal</button>
+                <br><br>
+                <video id="video1" width="420">
+                  <source src="images/My Movie.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+                </video>
+              </div> 
+              
+              <script> 
+              var myVideo = document.getElementById("video1"); 
+              
+              function playPause() { 
+                if (myVideo.paused) 
+                  myVideo.play(); 
+                else 
+                  myVideo.pause(); 
+              } 
+              
+              function makeBig() { 
+                  myVideo.width = 560; 
+              } 
+              
+              function makeSmall() { 
+                  myVideo.width = 320; 
+              } 
+              
+              function makeNormal() { 
+                  myVideo.width = 420; 
+              } 
+              </script>
+
+                <figcaption> Video Translation</figcaption> 
+
+                <p>“ the future I would like it to be, I think everyone would like the future to have peace,
+                    not giving importance to the race or color, we see each other as human beings which we are, valuing
+                    and respecting one another. And when someone needs help, help each other and be able to always have 
+                    each other. We all fight for peace, but we cannot conquer it, the Bible states the only peace one can
+                    find is within yourself and with God. Those of us who believe in God we know perfectly well that there 
+                    will be no peace because of wars, nations fighting one another which will mean some
+                    will fall and some will rise, when it shouldn’t be that way in order to get peace. Those of us who believe 
+                    in God know he is coming soon. This country and all countries want peace and hopefully it is
+                    like that soon.” </p>
+
+                <div class=".column2"> <img src="images/America_Racist.jpg" width="300" height="220" style="float: right; margin-left: 0px; padding-top: 5px;
+                margin-bottom: 5px; border: double  #00004d  6px; padding: 4px; " > </div>
+
+                <h6> 
+                    Our fight is not over!
+                </br>
+                    Below are websites you can access to get involved in for a positive movement!
+                </br>
+                    From the creators of This Is America website, we thank you for viewing our website, and help us change America for the better!
+                </h6> 
+                
+        
+                <div class="links"> 
+                    <a href="https://nomoredeaths.org/en/">No more Deaths</a> 
+                </br>
+                    <a href="https://blacklivesmatter.org/">Black Lives Matter</a> 
+                </br>
+                    <a href="https://worldrelief.org/">World Relief</a> 
+                </br>
+                    <a href="https://www.bia.gov/">Bureau of Indian Affairs</a> 
+                </div> 
+
+        
+            </article> 
+        
+        </body> 
+        
+    </html> 
+        
+         
